@@ -83,37 +83,30 @@ export default function Index() {
       <section className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
               <div className="text-left animate-fade-in">
                 <h1 className="font-heading font-bold text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
-                  Контроль на каждом<br />этапе — от дистрибьютора<br />до решения
+                  Не запускаем регистрацию,<br />пока рынок не подтверждён
                 </h1>
-                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                  Сначала подтверждаем спрос и коммерческий смысл.<br />
-                  Затем ведём регистрацию — с фиксированными сроками и бюджетом.
+                <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
+                  Сначала подтверждаем дистрибьютора и коммерческий потенциал.<br />
+                  Затем ведём регистрацию в РФ и ЕАЭС до решения — с фиксированными этапами, сроками и бюджетом.
                 </p>
                 
-                <div className="space-y-3 mb-10">
-                  <div className="flex items-center gap-3 text-base text-foreground">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="font-medium">Go/No-Go до старта</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-base text-foreground">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="font-medium">Сроки и бюджет по этапам</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-base text-foreground">
-                    <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
-                    <span className="font-medium">Сопровождение до решения</span>
-                  </div>
+                <div className="flex items-center gap-3 text-sm text-muted-foreground mb-10">
+                  <span>С 2008 года</span>
+                  <span>•</span>
+                  <span>200+ проектов</span>
+                  <span>•</span>
+                  <span>Медицинские изделия и ЛС</span>
                 </div>
 
-                <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                <div className="flex flex-col sm:flex-row gap-4 mb-3">
                   <Button onClick={scrollToForm} size="lg" className="text-lg px-8 py-6">
                     Оценить проект
                   </Button>
                   <Button onClick={scrollToForm} variant="outline" size="lg" className="text-lg px-8 py-6">
-                    Получить дорожную карту
+                    Получить план регистрации
                   </Button>
                 </div>
                 <p className="text-sm text-muted-foreground">
@@ -121,39 +114,42 @@ export default function Index() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-center">
-                <div className="w-full max-w-md">
-                  <div className="space-y-8">
-                    <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                        <Icon name="Users" size={32} className="text-primary" />
-                      </div>
-                      <h3 className="font-heading font-bold text-xl mb-2">Дистрибьютор</h3>
-                      <p className="text-sm text-muted-foreground">подтверждаем спрос</p>
+              <div className="relative flex items-center justify-center">
+                <div className="absolute inset-0 overflow-hidden rounded-lg">
+                  <img 
+                    src="https://cdn.poehali.dev/projects/9d050533-0d0d-4b8b-afd6-63e53d0ecd94/files/ed888b64-8fdf-4dd0-964e-de99a09a17b7.jpg"
+                    alt=""
+                    className="w-full h-full object-cover opacity-20 grayscale"
+                  />
+                </div>
+                
+                <div className="relative z-10 w-full max-w-md py-12">
+                  <div className="space-y-6">
+                    <div className="pl-8 border-l-2 border-primary">
+                      <h3 className="font-heading font-bold text-xl mb-1">Дистрибьютор</h3>
+                      <p className="text-sm text-muted-foreground">подтверждаем спрос и стратегию входа</p>
                     </div>
                     
-                    <div className="flex justify-center">
-                      <div className="w-0.5 h-12 bg-border"></div>
-                    </div>
-
-                    <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                        <Icon name="FileCheck" size={32} className="text-primary" />
+                    <div className="flex pl-8">
+                      <div className="flex items-center justify-center">
+                        <Icon name="ArrowDown" size={20} className="text-primary" />
                       </div>
-                      <h3 className="font-heading font-bold text-xl mb-2">Регистрация</h3>
-                      <p className="text-sm text-muted-foreground">ведём до решения</p>
                     </div>
 
-                    <div className="flex justify-center">
-                      <div className="w-0.5 h-12 bg-border"></div>
+                    <div className="pl-8 border-l-2 border-primary">
+                      <h3 className="font-heading font-bold text-xl mb-1">Регистрация</h3>
+                      <p className="text-sm text-muted-foreground">контролируем экспертизу до решения</p>
                     </div>
 
-                    <div className="text-center">
-                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                        <Icon name="TrendingUp" size={32} className="text-primary" />
+                    <div className="flex pl-8">
+                      <div className="flex items-center justify-center">
+                        <Icon name="ArrowDown" size={20} className="text-primary" />
                       </div>
-                      <h3 className="font-heading font-bold text-xl mb-2">Продажи</h3>
-                      <p className="text-sm text-muted-foreground">выход без хаоса</p>
+                    </div>
+
+                    <div className="pl-8 border-l-2 border-primary">
+                      <h3 className="font-heading font-bold text-xl mb-1">Продажи</h3>
+                      <p className="text-sm text-muted-foreground">выход без регуляторного хаоса</p>
                     </div>
                   </div>
                 </div>
