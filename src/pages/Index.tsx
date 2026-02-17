@@ -67,11 +67,12 @@ export default function Index() {
     <div className="min-h-screen bg-background">
       <header className="sticky top-0 z-50 bg-white border-b border-border shadow-sm">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-heading font-bold text-xl">R</span>
-            </div>
-            <span className="font-heading font-bold text-2xl text-primary">Regicom</span>
+          <div className="flex items-center gap-3">
+            <img 
+              src="https://cdn.poehali.dev/projects/9d050533-0d0d-4b8b-afd6-63e53d0ecd94/bucket/03c7edf6-1ef5-4891-b72f-94c5f9afc503.png" 
+              alt="Regicom" 
+              className="h-10"
+            />
           </div>
           <Button onClick={scrollToForm} size="lg" className="font-semibold">
             Оценить проект
@@ -620,11 +621,12 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center">
-                  <span className="text-primary font-heading font-bold text-xl">R</span>
-                </div>
-                <span className="font-heading font-bold text-2xl">Regicom</span>
+              <div className="mb-4">
+                <img 
+                  src="https://cdn.poehali.dev/projects/9d050533-0d0d-4b8b-afd6-63e53d0ecd94/bucket/03c7edf6-1ef5-4891-b72f-94c5f9afc503.png" 
+                  alt="Regicom" 
+                  className="h-10 brightness-0 invert"
+                />
               </div>
               <p className="text-white/80">
                 Регистрация фармпрепаратов и медизделий на рынках России и ЕАЭС
