@@ -80,38 +80,83 @@ export default function Index() {
         </div>
       </header>
 
-      <section className="py-20 lg:py-32 bg-gradient-to-b from-muted to-background">
+      <section className="py-20 lg:py-32 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center animate-fade-in">
-            <h1 className="font-heading font-bold text-4xl lg:text-6xl text-foreground mb-6 leading-tight">
-              Выход на рынок РФ и ЕАЭС —<br />предсказуемо и без дорогих ошибок
-            </h1>
-            <p className="text-xl text-muted-foreground mb-10 max-w-3xl mx-auto">
-              Сначала подтверждаем канал продаж и коммерческую целесообразность,
-              затем ведём регистрацию до результата — с понятным планом, сроками и бюджетом
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-              <Button onClick={scrollToForm} size="lg" className="text-lg px-8 py-6">
-                <Icon name="FileCheck" className="mr-2" size={20} />
-                Оценить проект
-              </Button>
-              <Button onClick={scrollToForm} variant="outline" size="lg" className="text-lg px-8 py-6">
-                <Icon name="Map" className="mr-2" size={20} />
-                Получить дорожную карту
-              </Button>
-            </div>
-            <div className="flex flex-wrap gap-6 justify-center text-sm text-muted-foreground">
-              <div className="flex items-center gap-2">
-                <Icon name="CheckCircle" size={18} className="text-accent" />
-                <span>200+ успешных проектов</span>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+              <div className="text-left animate-fade-in">
+                <h1 className="font-heading font-bold text-5xl lg:text-6xl text-foreground mb-6 leading-tight">
+                  Контроль на каждом<br />этапе — от дистрибьютора<br />до решения
+                </h1>
+                <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+                  Сначала подтверждаем спрос и коммерческий смысл.<br />
+                  Затем ведём регистрацию — с фиксированными сроками и бюджетом.
+                </p>
+                
+                <div className="space-y-3 mb-10">
+                  <div className="flex items-center gap-3 text-base text-foreground">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                    <span className="font-medium">Go/No-Go до старта</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-base text-foreground">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                    <span className="font-medium">Сроки и бюджет по этапам</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-base text-foreground">
+                    <div className="w-1.5 h-1.5 bg-primary rounded-full flex-shrink-0"></div>
+                    <span className="font-medium">Сопровождение до решения</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 mb-4">
+                  <Button onClick={scrollToForm} size="lg" className="text-lg px-8 py-6">
+                    Оценить проект
+                  </Button>
+                  <Button onClick={scrollToForm} variant="outline" size="lg" className="text-lg px-8 py-6">
+                    Получить дорожную карту
+                  </Button>
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  Ответ в течение 1–2 рабочих дней
+                </p>
               </div>
-              <div className="flex items-center gap-2">
-                <Icon name="CheckCircle" size={18} className="text-accent" />
-                <span>12 лет на рынке</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Icon name="CheckCircle" size={18} className="text-accent" />
-                <span>Работа под результат</span>
+
+              <div className="flex items-center justify-center">
+                <div className="w-full max-w-md">
+                  <div className="space-y-8">
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                        <Icon name="Users" size={32} className="text-primary" />
+                      </div>
+                      <h3 className="font-heading font-bold text-xl mb-2">Дистрибьютор</h3>
+                      <p className="text-sm text-muted-foreground">подтверждаем спрос</p>
+                    </div>
+                    
+                    <div className="flex justify-center">
+                      <div className="w-0.5 h-12 bg-border"></div>
+                    </div>
+
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                        <Icon name="FileCheck" size={32} className="text-primary" />
+                      </div>
+                      <h3 className="font-heading font-bold text-xl mb-2">Регистрация</h3>
+                      <p className="text-sm text-muted-foreground">ведём до решения</p>
+                    </div>
+
+                    <div className="flex justify-center">
+                      <div className="w-0.5 h-12 bg-border"></div>
+                    </div>
+
+                    <div className="text-center">
+                      <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                        <Icon name="TrendingUp" size={32} className="text-primary" />
+                      </div>
+                      <h3 className="font-heading font-bold text-xl mb-2">Продажи</h3>
+                      <p className="text-sm text-muted-foreground">выход без хаоса</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
