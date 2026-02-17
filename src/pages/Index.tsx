@@ -621,14 +621,14 @@ export default function Index() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
             <div>
-              <div className="mb-4">
+              <div className="mb-6">
                 <img 
                   src="https://cdn.poehali.dev/projects/9d050533-0d0d-4b8b-afd6-63e53d0ecd94/bucket/03c7edf6-1ef5-4891-b72f-94c5f9afc503.png" 
                   alt="Regicom" 
-                  className="h-10 brightness-0 invert"
+                  className="h-14 brightness-0 invert"
                 />
               </div>
-              <p className="text-white/80">
+              <p className="text-white/80 text-sm leading-relaxed">
                 Регистрация фармпрепаратов и медизделий на рынках России и ЕАЭС
               </p>
             </div>
